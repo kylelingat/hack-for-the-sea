@@ -76,8 +76,30 @@ body  {
 #reportDebris {
   grid-column-start: 1;
   background-color: red;
+  padding: 10px;
+}
+
+
+#reportDebris h1 {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: white;
+  text-align: center;
+}
+
+#reportDebrisButton {
+  background-color: green;
+  border: none;
+}
+
+.boxIcon {
+  font-size: 60px;
+  margin: auto;
+  text-align: center;
+  color: white;
 }
 
 #viewMap {
   background-color: green;
+  padding: 10px;
 }
