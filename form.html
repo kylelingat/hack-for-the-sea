@@ -14,14 +14,38 @@
         <div id="leftNav">
             <li><a href="index.html">HOME</a></li>
             <li class="active"><a href="">Report Debris</a></li>
+            <li><a href="">Reported Debris</a></li>
             <li><a href="">View Map</a></li>
             <li><a href="">t</a></li>
         </div>
 
         <div id="mainContent">
+          <div id="pageName">
+            <h1>Report Debris</h1>
+          </div>
             <div id="formArea">
                 <form id="form">
-                    <input type="text"> insert image url here</input>
+                  <div id="nameInputContainer" class="inputItem">
+                    <label id="nameLabel" for="nameInput">Name:</label>
+                    <input id="nameInput" type="text"></input>
+                  </div>
+                  <div id="emailInputContainer"class="inputItem">
+                    <label for="nameInput">E-Mail</label>
+                    <input type="email"></input>
+                  </div>
+                  <div id="phoneInputContainer" class="inputItem">
+                    <label for="nameInput">Phone Number</label>
+                    <input type="tel"></input>
+                  </div>
+                  <div id="locationInputContainer" class="inputItem">
+                    <label for="nameInput">Location</label>
+                    <input type="text"></input>
+                  </div>
+                  <div id="typeInputContainer" class="inputItem">
+                    <input type="radio" name="gender" value="male" checked> Male
+                    <input type="radio" name="gender" value="female"> Female
+                    <input type="radio" name="gender" value="other"> Other
+                  </div>
 
                     <input type="submit"></input>
 

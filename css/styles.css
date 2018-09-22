@@ -3,6 +3,7 @@ body  {
   height: 100vh;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 #pageContainer {
@@ -134,4 +135,49 @@ body  {
 #viewMap {
   background-color: #009C41;
   padding: 10px;
+}
+
+/* form page */
+#form {
+  display: grid;
+  grid-template-columns: 0.75fr 0.75fr 1fr;
+  width: 90%;
+  margin: auto;
+  grid-gap: 10px;
+  margin-top: 40px;
+}
+
+.inputItem {
+}
+
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    font-size: 21px;
+}
+
+label {
+  font-family: 'Roboto';
+  opacity: 0.7;
+}
+
+#nameInputContainer {
+}
+
+#emailInputContainer {
+  grid-column-end: span 2;
+}
+
+#phoneInputContainer {
+  grid-column-end: span 1;
+}
+
+#locationInputContainer {
+  grid-column-end: span 2;
 }
