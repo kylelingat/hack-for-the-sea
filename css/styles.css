@@ -7,7 +7,7 @@ body  {
 
 #pageContainer {
   display: grid;
-  grid-template-columns: 25% 75%;
+  grid-template-columns: 20% 80%;
 }
 
 #leftNav {
@@ -38,7 +38,17 @@ body  {
 }
 
 #mainContent {
-  background-color: #1C2A39;
+  background-color: #E0E0E0;
   height: 100%;
   width: 100%;
+}
+
+#mainContentContainer {
+  width: 90%;
+  margin: auto;
+}
+
+#textContainer {
+  background-color: #17BBB0;
+  text-align: center;
 }
