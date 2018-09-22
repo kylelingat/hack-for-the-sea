@@ -13,11 +13,13 @@ body  {
 #leftNav {
   height: 100%;
   background-color: #1C2A39;
+  padding-bottom: 50px;
 }
 
 #leftNav li {
   list-style-type: none;
   margin-bottom: 10px;
+  transition: 0.5s;
 }
 
 #leftNav li:hover {
@@ -41,6 +43,7 @@ body  {
   background-color: #E0E0E0;
   height: 100%;
   width: 100%;
+  padding-bottom: 50px;
 }
 
 #pageName {
@@ -54,7 +57,6 @@ body  {
 #mainContentContainer {
   width: 90%;
   margin: auto;
-  height: 1080px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 0.10fr 0.10fr;
@@ -75,21 +77,50 @@ body  {
 
 #reportDebris {
   grid-column-start: 1;
-  background-color: red;
+  background-color: #007B70;
   padding: 10px;
 }
 
 
-#reportDebris h1 {
+#reportDebris h1, #viewMap h1 {
   font-family: 'Roboto';
   font-size: 18px;
+  font-weight: lighter;
   color: white;
+  text-align: center;
+  margin-top: 25px;
+}
+
+#reportDebrisButton, #viewMapButton {
   text-align: center;
 }
 
-#reportDebrisButton {
-  background-color: green;
+#reportDebrisButton button, #viewMapButton button {
   border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: 0.3s;
+}
+
+#reportDebrisButton button {
+  background-color: #17BBB0;
+  border: 3px solid #17BBB0;
+}
+
+#viewMapButton button {
+  background-color: #4EEC91;
+  border: 3px solid #4EEC91;
+}
+
+#reportDebrisButton button:hover, #viewMapButton button:hover {
+  background-color: transparent;
 }
 
 .boxIcon {
@@ -97,9 +128,10 @@ body  {
   margin: auto;
   text-align: center;
   color: white;
+  margin-top: 25px;
 }
 
 #viewMap {
-  background-color: green;
+  background-color: #009C41;
   padding: 10px;
 }
