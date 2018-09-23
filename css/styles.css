@@ -630,13 +630,92 @@ input:checked ~ .checkmark {
 #otherPage {
   display: none;
 }
+
+#eventsGridContainer {
+  width: 95%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 50px;
+}
+
+.eventItem {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  width: 90%;
+  margin: auto;
+}
+
+.eventItem:nth-child(even) {
+  grid-template-columns: 2fr 0.5fr;
+}
+
+.eventBanner {
+  background-image: url('../stock/7.jpg');
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+.eventItem:nth-child(2) .eventBanner {
+  background-image: url('../stock/8.jpg');
+}
+
+.eventItem:nth-child(3) .eventBanner {
+  background-image: url('../stock/9.jpg');
+}
+
+.eventItem:nth-child(4) .eventBanner {
+  background-image: url('../stock/19.jpg');
+}
+
+
+.eventDate {
+  background-color: #FF6C5C;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
+
+.eventItem:nth-child(2) .eventDate {
+  background-color: #F39C12;
+}
+
+.eventItem:nth-child(3) .eventDate {
+  background-color: #47EBE0;
+}
+.eventItem:nth-child(4) .eventDate {
+  background-color: #106B60;
+}
+.eventDescription {
+  background-color: #E0E0E0;
+  padding: 10px;
+}
+
+.eventDescription h2 {
+  text-align: center;
+  font-size: 19px;
+
+}
+
+.eventDescription p {
+  opacity: 0.7;
+  text-align: center;
+}
+
 @media only screen and (max-width: 1024px) {
   #mainContentContainer,
   #form,
   #submissionGrid,
   .commentItem,
-  #leaveAComment {
-    grid-template-columns: 1fr;
+  #leaveAComment,
+  #eventsGridContainer,
+  .eventItem {
+    grid-template-columns: 1fr !important;
   }
 
   #submissionModalGrid {
