@@ -198,6 +198,7 @@ label {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
   margin-top: 25px;
+  height: 100%;
 }
 
 #typeInputContainer h1 {
@@ -316,5 +317,13 @@ input[type="submit"]:hover {
 
   #typesContainerGrid {
     grid-template-columns: 100%;
+  }
+
+  .radioContainer {
+    grid-column-start: 1 !important;
+  }
+
+  input[type="submit"] {
+    grid-column-start: 1 !important;
   }
 }
