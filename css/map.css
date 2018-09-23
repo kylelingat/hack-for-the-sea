@@ -6,6 +6,22 @@ body  {
 }
 
 #map {
+  position: fixed;
   height: 100%;
   width: 100%;
+  opacity: 0.4;
+}
+
+#currents {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  z-index: -1;
+  filter: brightness(120%);
+}
+
+.overlay {
+  height: 100vh;
+  width: 100vw;
 }

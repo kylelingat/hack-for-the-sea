@@ -45,7 +45,9 @@ body  {
 }
 
 #mainContent {
-  background-color: #E0E0E0;
+  background-image: url(../assets/ocean.jpg);
+  background-repeat: none;
+  background-size: 100% 100%;
   height: 100%;
   width: 100%;
   padding-bottom: 50px;
