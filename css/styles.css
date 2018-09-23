@@ -1,4 +1,4 @@
-body  {
+body {
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -7,15 +7,25 @@ body  {
   font-family: 'Roboto';
 }
 
+#re-toggle {
+  display: none;
+}
+
 #pageContainer {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 20% 80%;
 }
 
+#main-container {
+  height: 100%;
+  width: 100%;
+}
+
 #leftNav {
   height: 100%;
-  background-color: #1C2A39;
+  background-color: #1c2a39;
   padding-bottom: 50px;
 }
 
@@ -28,14 +38,15 @@ body  {
 }
 
 #leftNav li:hover {
-  background-color: #17BBB0;
+  background-color: #17bbb0;
 }
 
 .active {
-  background-color: #17BBB0;
+  background-color: #17bbb0;
 }
 
-#leftNav a, button a {
+#leftNav a,
+button a {
   padding: 15px;
   text-decoration: none;
   font-size: 18px;
@@ -48,15 +59,14 @@ body  {
   height: 100%;
   width: 100%;
   padding-bottom: 50px;
-
 }
-
 
 #mainContentHomePage {
   height: 100%;
   width: 100%;
   padding-bottom: 50px;
-  background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(../assets/ocean.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/ocean.jpg);
 }
 #pageName {
   margin: auto;
@@ -68,20 +78,19 @@ body  {
 }
 
 #pageNameHomePage {
-    margin: auto;
-    text-align: center;
-    color: white;
-    font-family: 'Roboto';
-    font-size: 18px;
-    opacity: 0.9;
-
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 18px;
+  opacity: 0.9;
 }
 #mainContentContainer {
   width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.10fr 0.10fr;
+  grid-template-rows: 0.1fr 0.1fr;
   grid-gap: 40px;
 }
 
@@ -100,20 +109,22 @@ body  {
 
 #reportDebris {
   grid-column-start: 1;
-  background-color: #007B70;
+  background-color: #007b70;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 #reportedDebris {
-    grid-column-start: 1;
-    background-color: #2ECC71;
-    padding: 10px;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  grid-column-start: 1;
+  background-color: #2ecc71;
+  padding: 10px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-
-#reportDebris h1, #viewMap h1, #reportedDebris h1, #upcomingEvents h1 {
+#reportDebris h1,
+#viewMap h1,
+#reportedDebris h1,
+#upcomingEvents h1 {
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: lighter;
@@ -122,11 +133,17 @@ body  {
   margin-top: 25px;
 }
 
-#reportDebrisButton, #viewMapButton, #reportedDebrisButton, #upcomingEventsButton {
+#reportDebrisButton,
+#viewMapButton,
+#reportedDebrisButton,
+#upcomingEventsButton {
   text-align: center;
 }
 
-#reportDebrisButton button, #viewMapButton button, #reportedDebrisButton button, #upcomingEventsButton button {
+#reportDebrisButton button,
+#viewMapButton button,
+#reportedDebrisButton button,
+#upcomingEventsButton button {
   border: none;
   color: white;
   padding: 20px;
@@ -141,26 +158,29 @@ body  {
 }
 
 #reportDebrisButton button {
-  background-color: #17BBB0;
-  border: 3px solid #17BBB0;
+  background-color: #17bbb0;
+  border: 3px solid #17bbb0;
 }
 
 #viewMapButton button {
-  background-color: #1EBC61;
-  border: 3px solid #1EBC61;
+  background-color: #1ebc61;
+  border: 3px solid #1ebc61;
 }
 
 #upcomingEventsButton button {
-  background-color: #37DBD0;
-  border: 3px solid #37DBD0;
+  background-color: #37dbd0;
+  border: 3px solid #37dbd0;
 }
 
 #reportedDebrisButton button {
-  background-color: #4EEC91;
-  border: 3px solid #4EEC91;
+  background-color: #4eec91;
+  border: 3px solid #4eec91;
 }
 
-#reportDebrisButton button:hover, #viewMapButton button:hover, #reportedDebrisButton button:hover, #upcomingEventsButton button:hover {
+#reportDebrisButton button:hover,
+#viewMapButton button:hover,
+#reportedDebrisButton button:hover,
+#upcomingEventsButton button:hover {
   background-color: transparent;
 }
 
@@ -173,13 +193,13 @@ body  {
 }
 
 #viewMap {
-  background-color: #009C41;
+  background-color: #009c41;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 #upcomingEvents {
-  background-color: #17BBB0;
+  background-color: #17bbb0;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -197,19 +217,21 @@ body  {
 .inputItem {
 }
 
-input[type="text"], input[type="email"], input[type="tel"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-bottom: 40px;
-    font-size: 21px;
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  font-size: 21px;
 }
 
-#descriptionInputContainer{
+#descriptionInputContainer {
   grid-column-end: span 3;
 }
 
@@ -257,24 +279,24 @@ label {
   grid-column-start: 2;
 }
 .radioContainer {
-    display: block;
-    color: black;
-    position: relative;
-    margin-bottom: 25px;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 25px;
-    transition: 0.3s;
-    width: 70%;
-    height: 100px;
-    text-align: center;
-    margin: auto;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  color: black;
+  position: relative;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  transition: 0.3s;
+  width: 70%;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.radioContainer:hover{
+.radioContainer:hover {
   transform: scale(1.08);
   background-color: rgba(23, 187, 176, 0.2);
 }
@@ -287,33 +309,33 @@ label {
 }
 /* Hide the browser's default radio button */
 .radioContainer input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 /* Create a custom radio button */
 .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    color: transparent;
-    border-radius: 10px;
-    transition: 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  color: transparent;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
- input:checked ~ .checkmark {
-   background-color: rgba(23, 187, 176, 0.2);
+input:checked ~ .checkmark {
+  background-color: rgba(23, 187, 176, 0.2);
 }
 
 .checkmark:after {
-    content: "";
-    padding: 10px;
-    position: absolute;
-    display: none;
+  content: '';
+  padding: 10px;
+  position: absolute;
+  display: none;
 }
 
 .checkmark p {
@@ -321,10 +343,14 @@ label {
   font-size: 20px;
 }
 
-#typesContainerGrid input[type="submit"] {
-  border: 3px solid #17BBB0;
+.submit-button {
+  border: 3px solid #17bbb0;
+}
+
+#typesContainerGrid input[type='submit'] {
+  border: 3px solid #17bbb0;
   color: white;
-  background-color: #17BBB0;
+  background-color: #17bbb0;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -338,9 +364,9 @@ label {
   border-radius: 10px;
 }
 
-input[type="submit"]:hover {
+.submit-button:hover {
   background-color: transparent;
-  color: #17BBB0;
+  color: #17bbb0;
 }
 
 #submissionContent {
@@ -353,7 +379,7 @@ input[type="submit"]:hover {
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 15px;
   width: 100%;
-  margin:auto;
+  margin: auto;
 }
 
 .submissionItem {
@@ -364,7 +390,7 @@ input[type="submit"]:hover {
   overflow: hidden;
 }
 
-.submissionItem .submissionItemBackground{
+.submissionItem .submissionItemBackground {
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -379,50 +405,49 @@ input[type="submit"]:hover {
   transform: scale(1.1);
 }
 
-
-.submissionItem:first-child .submissionItemBackground{
-  background-image: url("../stock/1.jpg");
+.submissionItem:first-child .submissionItemBackground {
+  background-image: url('../stock/1.jpg');
 }
 
 .submissionItem:nth-child(2) .submissionItemBackground {
-  background-image: url("../stock/2.jpg");
+  background-image: url('../stock/2.jpg');
 }
 
 .submissionItem:nth-child(3) .submissionItemBackground {
-  background-image: url("../stock/3.jpg");
+  background-image: url('../stock/3.jpg');
 }
 
 .submissionItem:nth-child(4) .submissionItemBackground {
-  background-image: url("../stock/4.jpg");
+  background-image: url('../stock/4.jpg');
 }
 
 .submissionItem:nth-child(5) .submissionItemBackground {
-  background-image: url("../stock/5.jpg");
+  background-image: url('../stock/5.jpg');
 }
 
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
 }
 
 /* Modal Content */
 .modal-content {
-    background-color: #D0D0D0;
-    margin: auto;
-    padding: 20px;
-    width: 60%;
-    height: 400px;
-    overflow-y: scroll;
-    overflow-x: hidden;
+  background-color: #d0d0d0;
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 .modal-content h1 {
@@ -446,25 +471,26 @@ input[type="submit"]:hover {
 }
 
 #modalDescription {
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   padding: 20px;
 }
 
 #modalEmail {
   width: 100%;
   height: 50px;
-  background-color: #17BBB0;
+  background-color: #17bbb0;
   text-align: center;
 }
 
 #modalName {
   width: 100%;
   height: 50px;
-  background-color: #17BBB0;
+  background-color: #17bbb0;
   text-align: center;
 }
 
-#modalName h2, #modalEmail h2 {
+#modalName h2,
+#modalEmail h2 {
   font-size: 16px;
   font-weight: lighter;
   letter-spacing: 1px;
@@ -486,7 +512,7 @@ input[type="submit"]:hover {
 }
 
 .commentItem:nth-child(odd) {
-  background-color: #C5D3E2;
+  background-color: #c5d3e2;
 }
 
 .userIcon {
@@ -506,7 +532,7 @@ input[type="submit"]:hover {
 }
 
 .userComment p {
-  opacity: 0.7
+  opacity: 0.7;
 }
 
 #leaveAComment {
@@ -516,12 +542,12 @@ input[type="submit"]:hover {
   grid-gap: 10px;
 }
 
-#leaveAComment input[type="submit"]{
+#leaveAComment input[type='submit'] {
   width: 100%;
   margin: 8px 0;
   display: inline-block;
-  border: 3px solid #17BBB0;
-  background-color: #17BBB0;
+  border: 3px solid #17bbb0;
+  background-color: #17bbb0;
   color: white;
   border-radius: 10px;
   box-sizing: border-box;
@@ -532,14 +558,14 @@ input[type="submit"]:hover {
   cursor: pointer;
 }
 
-#leaveAComment input[type="submit"]:hover {
+#leaveAComment input[type='submit']:hover {
   background-color: transparent;
-  color: #17BBB0;
+  color: #17bbb0;
 }
 
 #submitComment {
   height: 100%;
-  background-color: #17BBB0;
+  background-color: #17bbb0;
   color: white;
 }
 
@@ -552,21 +578,25 @@ input[type="submit"]:hover {
 }
 
 .close {
-    color: #aaaaaa;
-    position: absolute;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaaaaa;
+  position: absolute;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-@media only screen and (max-width : 1024px){
-  #mainContentContainer, #form, #submissionGrid, .commentItem, #leaveAComment{
+@media only screen and (max-width: 1024px) {
+  #mainContentContainer,
+  #form,
+  #submissionGrid,
+  .commentItem,
+  #leaveAComment {
     grid-template-columns: 1fr;
   }
 
@@ -592,11 +622,12 @@ input[type="submit"]:hover {
     grid-template-columns: 100%;
   }
 
-  .radioContainer, #commentSection {
+  .radioContainer,
+  #commentSection {
     grid-column-start: 1 !important;
   }
 
-  input[type="submit"] {
+  .submit-button {
     grid-column-start: 1 !important;
   }
 }
