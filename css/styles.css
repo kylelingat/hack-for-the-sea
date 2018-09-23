@@ -297,3 +297,24 @@ input[type="submit"]:hover {
   background-color: transparent;
   color: #17BBB0;
 }
+
+
+@media only screen and (max-width : 1024px){
+  #mainContentContainer, #form {
+    grid-template-columns: 1fr;
+  }
+
+  #textContainer {
+    grid-column-end: 2;
+  }
+
+  .inputItem {
+    grid-column-end: 3 !important;
+    grid-column-start: 1 !important;
+    width: 100%;
+  }
+
+  #typesContainerGrid {
+    grid-template-columns: 100%;
+  }
+}
