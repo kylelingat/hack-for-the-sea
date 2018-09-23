@@ -1,4 +1,4 @@
-body  {
+body {
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -7,15 +7,25 @@ body  {
   font-family: 'Roboto';
 }
 
+#re-toggle {
+  display: none;
+}
+
 #pageContainer {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   display: grid;
   /* grid-template-columns: 20% 80%; */
 }
 
+#main-container {
+  height: 100%;
+  width: 100%;
+}
+
 #leftNav {
   height: 100%;
-  background-color: #1C2A39;
+  background-color: #1c2a39;
   padding-bottom: 50px;
 }
 
@@ -28,14 +38,15 @@ body  {
 }
 
 #leftNav li:hover {
-  background-color: #17BBB0;
+  background-color: #17bbb0;
 }
 
 .active {
-  background-color: #17BBB0;
+  background-color: #17bbb0;
 }
 
-#leftNav a, button a {
+#leftNav a,
+button a {
   padding: 15px;
   text-decoration: none;
   font-size: 18px;
@@ -45,58 +56,91 @@ body  {
 }
 
 #mainContent {
-  background-color: #E0E0E0;
   height: 100%;
   width: 100%;
   padding-bottom: 50px;
+  background-color: #D5E5E6;
 }
 
+#mainContentReported {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+  background-color: #D5E5E6;
+}
+
+#mainContentReportedOtherPage {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+  background-color: #D5E5E6;
+}
+
+#mainContentHomePage {
+  height: 100%;
+  width: 100%;
+  padding-bottom: 50px;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../assets/ocean.jpg);
+}
 #pageName {
   margin: auto;
   text-align: center;
+  color: black;
   font-family: 'Roboto';
   font-size: 18px;
-  opacity: 0.7;
+  opacity: 0.6;
 }
 
+#pageNameHomePage {
+  margin: auto;
+  text-align: center;
+  color: white;
+  font-family: 'Roboto';
+  font-size: 18px;
+  opacity: 0.9;
+}
 #mainContentContainer {
   width: 90%;
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.10fr 0.10fr;
+  grid-template-rows: 0.1fr 0.1fr;
   grid-gap: 40px;
 }
 
 #textContainer {
-  background-color: white;
+  background-color: #E0E0E0;
   margin-top: 40px;
   padding: 20px;
   grid-column-end: span 2;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  border-left: 15px solid #17bbb0;
 }
 
 #textContainer p {
   font-family: 'Roboto';
   line-height: 30px;
+  opacity: 0.9
 }
 
 #reportDebris {
   grid-column-start: 1;
-  background-color: #007B70;
+  background-color: #007b70;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 #reportedDebris {
-    grid-column-start: 1;
-    background-color: #2ECC71;
-    padding: 10px;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  grid-column-start: 1;
+  background-color: #2ecc71;
+  padding: 10px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-
-#reportDebris h1, #viewMap h1, #reportedDebris h1, #upcomingEvents h1 {
+#reportDebris h1,
+#viewMap h1,
+#reportedDebris h1,
+#upcomingEvents h1 {
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: lighter;
@@ -105,11 +149,17 @@ body  {
   margin-top: 25px;
 }
 
-#reportDebrisButton, #viewMapButton, #reportedDebrisButton, #upcomingEventsButton {
+#reportDebrisButton,
+#viewMapButton,
+#reportedDebrisButton,
+#upcomingEventsButton {
   text-align: center;
 }
 
-#reportDebrisButton button, #viewMapButton button, #reportedDebrisButton button, #upcomingEventsButton button {
+#reportDebrisButton button,
+#viewMapButton button,
+#reportedDebrisButton button,
+#upcomingEventsButton button {
   border: none;
   color: white;
   padding: 20px;
@@ -121,29 +171,23 @@ body  {
   margin-top: 25px;
   margin-bottom: 25px;
   transition: 0.3s;
+  border-radius: 10px;
 }
 
-#reportDebrisButton button {
-  background-color: #17BBB0;
-  border: 3px solid #17BBB0;
+#reportDebrisButton button, #upcomingEventsButton button  {
+  background-color: #17bbb0;
+  border: 3px solid #17bbb0;
 }
 
-#viewMapButton button {
-  background-color: #1EBC61;
-  border: 3px solid #1EBC61;
+#viewMapButton button, #reportedDebrisButton button  {
+  background-color: #4eec91;
+  border: 3px solid #4eec91;
 }
 
-#upcomingEventsButton button {
-  background-color: #37DBD0;
-  border: 3px solid #37DBD0;
-}
-
-#reportedDebrisButton button {
-  background-color: #4EEC91;
-  border: 3px solid #4EEC91;
-}
-
-#reportDebrisButton button:hover, #viewMapButton button:hover, #reportedDebrisButton button:hover, #upcomingEventsButton button:hover {
+#reportDebrisButton button:hover,
+#viewMapButton button:hover,
+#reportedDebrisButton button:hover,
+#upcomingEventsButton button:hover {
   background-color: transparent;
 }
 
@@ -156,13 +200,13 @@ body  {
 }
 
 #viewMap {
-  background-color: #009C41;
+  background-color: #2ecc71;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 #upcomingEvents {
-  background-color: #17BBB0;
+  background-color: #007b70;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -179,20 +223,34 @@ body  {
 
 .inputItem {
 }
-
-input[type="text"], input[type="email"], input[type="tel"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-bottom: 40px;
-    font-size: 21px;
+.title-container{
+  width:100%;
+  height:90px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
 }
 
-#descriptionInputContainer{
+.title{
+  font-size:36px;
+
+
+}
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  font-size: 21px;
+}
+
+#descriptionInputContainer {
   grid-column-end: span 3;
 }
 
@@ -240,26 +298,26 @@ label {
   grid-column-start: 2;
 }
 .radioContainer {
-    display: block;
-    color: black;
-    position: relative;
-    margin-bottom: 25px;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 25px;
-    transition: 0.3s;
-    width: 70%;
-    height: 100px;
-    text-align: center;
-    margin: auto;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  color: black;
+  position: relative;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  transition: 0.3s;
+  width: 70%;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.radioContainer:hover{
+.radioContainer:hover {
   transform: scale(1.08);
-  background-color: rgba(23, 187, 176, 0.2);
+  background-color: rgba(227, 114, 75, 0.8);
 }
 
 .radioContainer:hover i {
@@ -270,33 +328,33 @@ label {
 }
 /* Hide the browser's default radio button */
 .radioContainer input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 /* Create a custom radio button */
 .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    color: transparent;
-    border-radius: 10px;
-    transition: 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  color: transparent;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
- input:checked ~ .checkmark {
-   background-color: rgba(23, 187, 176, 0.2);
+input:checked ~ .checkmark {
+  background-color: rgba(227, 114, 75, 0.3);
 }
 
 .checkmark:after {
-    content: "";
-    padding: 10px;
-    position: absolute;
-    display: none;
+  content: '';
+  padding: 10px;
+  position: absolute;
+  display: none;
 }
 
 .checkmark p {
@@ -304,10 +362,10 @@ label {
   font-size: 20px;
 }
 
-input[type="submit"] {
-  border: 3px solid #17BBB0;
+.submit-button {
+  border: 3px solid #17bbb0;
   color: white;
-  background-color: #17BBB0;
+  background-color: #17bbb0;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -321,16 +379,352 @@ input[type="submit"] {
   border-radius: 10px;
 }
 
-input[type="submit"]:hover {
+#typesContainerGrid input[type='submit'] {
+  border: 3px solid #17bbb0;
+  color: white;
+  background-color: #17bbb0;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: 0.3s;
+  grid-column-start: 2;
+  border-radius: 10px;
+}
+
+.submit-button:hover {
   background-color: transparent;
-  color: #17BBB0;
+  color: #17bbb0;
+}
+
+#submissionContent {
+  width: 90%;
+  margin: auto;
+}
+
+#submissionGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 15px;
+  width: 100%;
+  margin: auto;
+}
+
+.submissionItem {
+  width: 100%;
+  height: 250px;
+  border-radius: 10px;
+  background-color: gray;
+  overflow: hidden;
+}
+
+.submissionItem .submissionItemBackground {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-position: center;
+  background-size: cover;
+  cursor: pointer;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.submissionItemBackground:hover {
+  transform: scale(1.1);
+}
+
+.submissionItem:first-child .submissionItemBackground {
+  background-image: url('../stock/1.jpg');
+}
+
+.submissionItem:nth-child(2) .submissionItemBackground {
+  background-image: url('../stock/2.jpg');
+}
+
+.submissionItem:nth-child(3) .submissionItemBackground {
+  background-image: url('../stock/3.jpg');
+}
+
+.submissionItem:nth-child(4) .submissionItemBackground {
+  background-image: url('../stock/4.jpg');
+}
+
+.submissionItem:nth-child(5) .submissionItemBackground {
+  background-image: url('../stock/5.jpg');
+}
+
+.submissionItem:nth-child(6) .submissionItemBackground {
+  background-image: url('../stock/6.jpg');
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #d0d0d0;
+  margin: auto;
+  padding: 20px;
+  width: 60%;
+  height: 400px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.modal-content h1 {
+  text-align: center;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#submissionModalGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 10px;
+}
+
+#modalPic {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+#modalDescription {
+  background-color: #e0e0e0;
+  padding: 20px;
+}
+
+#modalEmail {
+  width: 100%;
+  height: 50px;
+  background-color: #17bbb0;
+  text-align: center;
+}
+
+#modalName {
+  width: 100%;
+  height: 50px;
+  background-color: #17bbb0;
+  text-align: center;
+}
+
+#modalName h2,
+#modalEmail h2 {
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: white;
+}
+
+#commentSection {
+  width: 100%;
+  grid-column-end: span 2;
+}
+
+.commentItem {
+  background-color: rgba(94, 250, 247, 0.1);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-bottom: 25px;
+}
+
+.commentItem:nth-child(odd) {
+  background-color: #c5d3e2;
+}
+
+.userIcon {
+  height: 100%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.commentItem i {
+  font-size: 50px;
+  margin: auto;
+  opacity: 0.7;
+}
+
+.userComment {
+  height: 100%;
+}
+
+.userComment p {
+  opacity: 0.7;
+}
+
+#leaveAComment {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  width: 100%;
+  grid-gap: 10px;
+}
+
+#leaveAComment input[type='submit'] {
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #17bbb0;
+  background-color: #17bbb0;
+  color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#leaveAComment input[type='submit']:hover {
+  background-color: transparent;
+  color: #17bbb0;
+}
+
+#submitComment {
+  height: 100%;
+  background-color: #17bbb0;
+  color: white;
+}
+
+/* The Close Button */
+.closeButton {
+  margin: auto;
+  float: right;
+  position: relative;
+  right: 30px;
+}
+
+.close {
+  color: #aaaaaa;
+  position: absolute;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#otherPage {
+  display: none;
+}
+
+#eventsGridContainer {
+  width: 95%;
+  display: grid;
+  margin: auto;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 50px;
+}
+
+.eventItem {
+  display: grid;
+  grid-template-columns: 0.5fr 2fr;
+  width: 90%;
+  margin: auto;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+.eventItem:nth-child(even) {
+  grid-template-columns: 2fr 0.5fr;
+}
+
+.eventBanner {
+  background-image: url('../stock/7.jpg');
+  grid-column-start: 1;
+  grid-column-end: span 2;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px 10px 0px 0px;
+
+}
+
+.eventItem:nth-child(2) .eventBanner {
+  background-image: url('../stock/8.jpg');
+}
+
+.eventItem:nth-child(3) .eventBanner {
+  background-image: url('../stock/9.jpg');
+}
+
+.eventItem:nth-child(4) .eventBanner {
+  background-image: url('../stock/19.jpg');
 }
 
 
+.eventDate {
+  background-color: #FF6C5C;
+  text-align: center;
+  color: white;
+  padding: 5px;
+}
 
-@media only screen and (max-width : 1024px){
-  #mainContentContainer, #form {
-    grid-template-columns: 1fr;
+.eventItem:nth-child(2) .eventDate {
+  background-color: #F39C12;
+}
+
+.eventItem:nth-child(3) .eventDate {
+  background-color: #47EBE0;
+}
+.eventItem:nth-child(4) .eventDate {
+  background-color: #106B60;
+}
+.eventDescription {
+  background-color: #E0E0E0;
+  padding: 10px;
+}
+
+.eventDescription h2 {
+  text-align: center;
+  font-size: 19px;
+
+}
+
+.eventDescription p {
+  opacity: 0.7;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  #mainContentContainer,
+  #form,
+  #submissionGrid,
+  .commentItem,
+  #leaveAComment,
+  #eventsGridContainer,
+  .eventItem {
+    grid-template-columns: 1fr !important;
+  }
+
+  #submissionModalGrid {
+    display: block;
+  }
+
+  .userComment {
+    padding: 10px;
   }
 
   #textContainer {
@@ -347,11 +741,12 @@ input[type="submit"]:hover {
     grid-template-columns: 100%;
   }
 
-  .radioContainer {
+  .radioContainer,
+  #commentSection {
     grid-column-start: 1 !important;
   }
 
-  input[type="submit"] {
+  .submit-button {
     grid-column-start: 1 !important;
   }
 }
