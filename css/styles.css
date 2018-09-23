@@ -688,7 +688,7 @@ input:checked ~ .checkmark {
   background-color: #FF6C5C;
   text-align: center;
   color: white;
-  padding: 5px;
+  padding: 25px;
 }
 
 .eventItem:nth-child(2) .eventDate {
