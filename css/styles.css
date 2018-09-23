@@ -716,6 +716,7 @@ input:checked ~ .checkmark {
   text-align: center;
 }
 
+
 @media only screen and (max-width: 1024px) {
   #mainContentContainer,
   #form,
