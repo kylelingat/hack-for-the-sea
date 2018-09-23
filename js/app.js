@@ -48,7 +48,7 @@ $('#openMenu').on('click', () => {
   console.log('hellooo');
   menuCount++;
 
-  if (x % 2 !== 0) {
+  if (menuCount % 2 !== 0) {
     $('#openMenu').removeClass('activeMenu');
     $('#openMenu').addClass('inactiveMenu');
 
