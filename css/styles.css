@@ -89,18 +89,18 @@ button a {
   margin: auto;
   text-align: center;
   color: black;
-  font-family: 'Roboto';
+  font-family: 'Lato';
   font-size: 18px;
   opacity: 0.6;
+  letter-spacing: 5px;
 }
 
 #pageNameHomePage {
   margin: auto;
   text-align: center;
   color: white;
-  font-family: 'Roboto';
-  font-size: 18px;
-  opacity: 0.9;
+  font-family: 'Lato';
+  letter-spacing: 5px;
 }
 #mainContentContainer {
   width: 90%;
