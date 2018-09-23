@@ -88,16 +88,17 @@ function toggleDiv() {
 //open and close mobile menu
 var menuCount = 0;
 $('#openMenu').on('click', () => {
-  console.log('hellooo');
   menuCount++;
-
-  if (menuCount % 2 !== 0) {
+  console.log(menuCount);
+  if ($('.activeMenu').length) {
+    console.log('closing menu');
     $('#openMenu').removeClass('activeMenu');
     $('#openMenu').addClass('inactiveMenu');
 
     $('#pageContainer').removeClass('activeGrid');
     $('#pageContainer').addClass('inactiveGrid');
   } else {
+    console.log('opening menu');
     $('#openMenu').addClass('activeMenu');
     $('#openMenu').removeClass('inactiveMenu');
 
