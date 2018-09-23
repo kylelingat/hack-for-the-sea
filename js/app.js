@@ -91,14 +91,14 @@ $('#openMenu').on('click', () => {
   menuCount++;
   console.log(menuCount);
   if ($('.activeMenu').length) {
-    console.log('closing menu');
+    //closes menu
     $('#openMenu').removeClass('activeMenu');
     $('#openMenu').addClass('inactiveMenu');
 
     $('#pageContainer').removeClass('activeGrid');
     $('#pageContainer').addClass('inactiveGrid');
   } else {
-    console.log('opening menu');
+    //opens menu
     $('#openMenu').addClass('activeMenu');
     $('#openMenu').removeClass('inactiveMenu');
 
@@ -106,3 +106,14 @@ $('#openMenu').on('click', () => {
     $('#pageContainer').removeClass('inactiveGrid');
   }
 }); 
+
+$(document).ready(() => {
+  $('#leftNav li').on('click', () => {
+    //close menu
+    $('#openMenu').removeClass('activeMenu');
+    $('#openMenu').addClass('inactiveMenu');
+
+    $('#pageContainer').removeClass('activeGrid');
+    $('#pageContainer').addClass('inactiveGrid');
+  })
+})
