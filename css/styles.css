@@ -59,6 +59,7 @@ button a {
   height: 100%;
   width: 100%;
   padding-bottom: 50px;
+  background-color: #D5E5E6;
 }
 
 #mainContentHomePage {
@@ -95,16 +96,17 @@ button a {
 }
 
 #textContainer {
-  background-color: white;
+  background-color: #E0E0E0;
   margin-top: 40px;
   padding: 20px;
   grid-column-end: span 2;
-  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  border-left: 15px solid #17bbb0;
 }
 
 #textContainer p {
   font-family: 'Roboto';
   line-height: 30px;
+  opacity: 0.9
 }
 
 #reportDebris {
@@ -155,24 +157,15 @@ button a {
   margin-top: 25px;
   margin-bottom: 25px;
   transition: 0.3s;
+  border-radius: 10px;
 }
 
-#reportDebrisButton button {
+#reportDebrisButton button, #upcomingEventsButton button  {
   background-color: #17bbb0;
   border: 3px solid #17bbb0;
 }
 
-#viewMapButton button {
-  background-color: #1ebc61;
-  border: 3px solid #1ebc61;
-}
-
-#upcomingEventsButton button {
-  background-color: #37dbd0;
-  border: 3px solid #37dbd0;
-}
-
-#reportedDebrisButton button {
+#viewMapButton button, #reportedDebrisButton button  {
   background-color: #4eec91;
   border: 3px solid #4eec91;
 }
@@ -193,13 +186,13 @@ button a {
 }
 
 #viewMap {
-  background-color: #009c41;
+  background-color: #2ecc71;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 #upcomingEvents {
-  background-color: #17bbb0;
+  background-color: #007b70;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -298,7 +291,7 @@ label {
 
 .radioContainer:hover {
   transform: scale(1.08);
-  background-color: rgba(23, 187, 176, 0.2);
+  background-color: rgba(227, 114, 75, 0.8);
 }
 
 .radioContainer:hover i {
@@ -328,7 +321,7 @@ label {
 }
 
 input:checked ~ .checkmark {
-  background-color: rgba(23, 187, 176, 0.2);
+  background-color: rgba(227, 114, 75, 0.3);
 }
 
 .checkmark:after {
@@ -345,6 +338,19 @@ input:checked ~ .checkmark {
 
 .submit-button {
   border: 3px solid #17bbb0;
+  color: white;
+  background-color: #17bbb0;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: 0.3s;
+  grid-column-start: 2;
+  border-radius: 10px;
 }
 
 #typesContainerGrid input[type='submit'] {
