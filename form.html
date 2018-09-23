@@ -12,9 +12,7 @@
         crossorigin="anonymous">
 </head>
 
-<body>
-
-
+<body style="background-color: #D5E5E6">
         <div id="main-container">
 
             <div id="pageContainer">
@@ -23,11 +21,96 @@
                     <li class="active"><a href="form.html">REPORT DEBRIS</a></li>
                     <li><a href="report.html">SUBMITTED DEBRIS</a></li>
                     <li><a href="map.html">VIEW MAP</a></li>
-                    <li><a href="">Upcoming EVENTS</a></li>
+                    <li><a href="events.html">Upcoming EVENTS</a></li>
                 </div>
+                <div id="otherPage">
+                        <div id="myModal" class="modal">
+
+                            <!-- Modal content -->
+                            <div class="modal-content">
+                                <div class="closeButton"><span class="close">×</span></div>
+                                <h1>Ala Moana Beach Park</h1>
+                                <div id="submissionModalGrid">
+                                    <div id="modalPic"></div>
+                                    <div id="modalDescription">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cumque provident vero delectus modi fugiat eos.</p>
+                                    </div>
+                                    <div id="modalName">
+                                        <h2>Submitted by Kyle Lingat</h2>
+                                    </div>
+                                    <div id="modalEmail">
+                                        <h2>kylejlingat@gmail.com (808)-636-4993</h2>
+                                    </div>
+                                    <div id="commentSection">
+                                        <h1>Comments</h1>
+                                        <div class="commentItem">
+                                            <div class="userIcon">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <div class="userComment">
+                                                <p>Wow that's a lot of debris!</p>
+                                            </div>
+                                        </div>
+                                        <div class="commentItem">
+                                            <div class="userIcon">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <div class="userComment">
+                                                <p>I'm going to clean that up next week Saturday at 3pm, anyone wanna come?</p>
+                                            </div>
+                                        </div>
+                                        <div class="commentItem">
+                                            <div class="userIcon">
+                                                <i class="fas fa-user"></i>
+                                            </div>
+                                            <div class="userComment">
+                                                <p>Oh man I always go to that beach, if anyone wants to go with me, we can clean it up together</p>
+                                            </div>
+                                        </div>
+                                        <div id="leaveAComment">
+                                            <input type="text" placeholder="leave a comment...">
+                                            <input type="submit">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                            <div id="mainContentReportedOtherPage">
+                                <div id="pageName">
+                                    <h1>Reported Debris</h1>
+                                </div>
+                                <div id="submissionContent">
+                                    <div id="submissionGrid">
+                                        <div class="submissionItem">
+                                            <div class="submissionItemBackground"></div>
+                                        </div>
+                                        <div class="submissionItem">
+                                            <div class="submissionItemBackground"></div>
+                                        </div>
+                                        <div class="submissionItem">
+                                            <div class="submissionItemBackground"></div>
+                                        </div>
+                                        <div class="submissionItem">
+                                            <div class="submissionItemBackground"></div>
+                                        </div>
+                                        <div class="submissionItem">
+                                            <div class="submissionItemBackground"></div>
+                                        </div>
+                                        <div class="submissionItem">
+                                            <div class="submissionItemBackground"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                 <div id="mainContent">
                     <div id="pageName">
-                        <h1>Report Debris</h1>
+                      <div class="title-container">
+                        <div class="title">Report Debris</div>
+                      </div>
+
                     </div>
                     <div id="formArea">
                         <form id="form">
@@ -109,7 +192,13 @@
                         </form>
                     </div>
                 </div>
+              </div>
             </div>
+          </div>
+
+
+
+
         <script type="text/javascript" src="js/app.js"></script>
 </body>
 

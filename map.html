@@ -6,14 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Oahu</title>
     <link rel="stylesheet" href="./css/map.css">
+    <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <div id="currents">
+
+      <div id="pageContainer">
+          <div id="leftNav">
+              <li><a href="index.html">HOME</a></li>
+              <li><a href="form.html">Report Debris</a></li>
+              <li><a href="report.html">SUBMITTED Debris</a></li>
+              <li class="active"><a href="map.html">View Map</a></li>
+              <li><a href="events.html">Upcoming Events</a></li>
+            </div>
+
+    <!-- <div id="currents">
         <img class="overlay" src="./assets/currents.jpg">
-    </div>
+    </div> -->
     <div id="map"></div>
+  </div>
 </body>
 <!-- change key in the morning with different google account and payment card -->
     <script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyAE_Cbo0OczNxVI1Ppoxl_U9ZlmzvAVEn8&libraries=visualization"></script>
     <script src="gmaps.js"></script>
-</html>     
+</html>
