@@ -304,7 +304,7 @@ label {
   font-size: 20px;
 }
 
-input[type="submit"] {
+#typesContainerGrid input[type="submit"] {
   border: 3px solid #17BBB0;
   color: white;
   background-color: #17BBB0;
@@ -347,7 +347,7 @@ input[type="submit"]:hover {
   overflow: hidden;
 }
 
-.submissionItem .submissionItemBackground {
+.submissionItem .submissionItemBackground{
   width: 100%;
   height: 100%;
   border-radius: 10px;
@@ -399,17 +399,144 @@ input[type="submit"]:hover {
 
 /* Modal Content */
 .modal-content {
-    background-color: #fefefe;
+    background-color: #D0D0D0;
     margin: auto;
     padding: 20px;
-    border: 1px solid #888;
     width: 60%;
+    height: 400px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.modal-content h1 {
+  text-align: center;
+  opacity: 0.7;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+#submissionModalGrid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-row-gap: 10px;
+}
+
+#modalPic {
+  width: 100%;
+  height: 250px;
+  background-position: center;
+  background-size: cover;
+}
+
+#modalDescription {
+  background-color: #E0E0E0;
+  padding: 20px;
+}
+
+#modalEmail {
+  width: 100%;
+  height: 50px;
+  background-color: #17BBB0;
+  text-align: center;
+}
+
+#modalName {
+  width: 100%;
+  height: 50px;
+  background-color: #17BBB0;
+  text-align: center;
+}
+
+#modalName h2, #modalEmail h2 {
+  font-size: 16px;
+  font-weight: lighter;
+  letter-spacing: 1px;
+  color: white;
+}
+
+#commentSection {
+  width: 100%;
+  grid-column-end: span 2;
+}
+
+.commentItem {
+  background-color: rgba(94, 250, 247, 0.1);
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 20% 80%;
+  margin-bottom: 25px;
+}
+
+.commentItem:nth-child(odd) {
+  background-color: #C5D3E2;
+}
+
+.userIcon {
+  height: 100%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.commentItem i {
+  font-size: 50px;
+  margin: auto;
+  opacity: 0.7;
+}
+
+.userComment {
+  height: 100%;
+}
+
+.userComment p {
+  opacity: 0.7
+}
+
+#leaveAComment {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  width: 100%;
+  grid-gap: 10px;
+}
+
+#leaveAComment input[type="submit"]{
+  width: 100%;
+  margin: 8px 0;
+  display: inline-block;
+  border: 3px solid #17BBB0;
+  background-color: #17BBB0;
+  color: white;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  font-size: 16px;
+  text-transform: uppercase;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+#leaveAComment input[type="submit"]:hover {
+  background-color: transparent;
+  color: #17BBB0;
+}
+
+#submitComment {
+  height: 100%;
+  background-color: #17BBB0;
+  color: white;
 }
 
 /* The Close Button */
+.closeButton {
+  margin: auto;
+  float: right;
+  position: relative;
+  right: 30px;
+}
+
 .close {
     color: #aaaaaa;
-    float: right;
+    position: absolute;
     font-size: 28px;
     font-weight: bold;
 }
@@ -422,8 +549,16 @@ input[type="submit"]:hover {
 }
 
 @media only screen and (max-width : 1024px){
-  #mainContentContainer, #form {
+  #mainContentContainer, #form, #submissionGrid, .commentItem, #leaveAComment{
     grid-template-columns: 1fr;
+  }
+
+  #submissionModalGrid {
+    display: block;
+  }
+
+  .userComment {
+    padding: 10px;
   }
 
   #textContainer {
@@ -440,7 +575,7 @@ input[type="submit"]:hover {
     grid-template-columns: 100%;
   }
 
-  .radioContainer {
+  .radioContainer, #commentSection {
     grid-column-start: 1 !important;
   }
 

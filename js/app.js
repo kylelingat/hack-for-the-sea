@@ -10,6 +10,8 @@ var span = document.getElementsByClassName("close")[0];
 $(document).ready(function() {
     $('.submissionItem').click(function() {
         modal.style.display = "block";
+        var bg = $(this).find(".submissionItemBackground").css("background-image");
+        $("#modalPic").css("background-image", bg)
     });
 });
 // When the user clicks on <span> (x), close the modal
