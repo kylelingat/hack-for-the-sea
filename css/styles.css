@@ -21,8 +21,10 @@ body  {
 
 #leftNav li {
   list-style-type: none;
-  margin-bottom: 10px;
+  margin-bottom: 25px;
   transition: 0.5s;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 }
 
 #leftNav li:hover {
@@ -33,7 +35,7 @@ body  {
   background-color: #17BBB0;
 }
 
-#leftNav a {
+#leftNav a, button a {
   padding: 15px;
   text-decoration: none;
   font-size: 18px;
@@ -53,7 +55,7 @@ body  {
   margin: auto;
   text-align: center;
   font-family: 'Roboto';
-  font-size: 15px;
+  font-size: 18px;
   opacity: 0.7;
 }
 
@@ -85,8 +87,15 @@ body  {
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
+#reportedDebris {
+    grid-column-start: 1;
+    background-color: #2ECC71;
+    padding: 10px;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+}
 
-#reportDebris h1, #viewMap h1 {
+
+#reportDebris h1, #viewMap h1, #reportedDebris h1, #upcomingEvents h1 {
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: lighter;
@@ -95,11 +104,11 @@ body  {
   margin-top: 25px;
 }
 
-#reportDebrisButton, #viewMapButton {
+#reportDebrisButton, #viewMapButton, #reportedDebrisButton, #upcomingEventsButton {
   text-align: center;
 }
 
-#reportDebrisButton button, #viewMapButton button {
+#reportDebrisButton button, #viewMapButton button, #reportedDebrisButton button, #upcomingEventsButton button {
   border: none;
   color: white;
   padding: 20px;
@@ -119,11 +128,21 @@ body  {
 }
 
 #viewMapButton button {
+  background-color: #1EBC61;
+  border: 3px solid #1EBC61;
+}
+
+#upcomingEventsButton button {
+  background-color: #37DBD0;
+  border: 3px solid #37DBD0;
+}
+
+#reportedDebrisButton button {
   background-color: #4EEC91;
   border: 3px solid #4EEC91;
 }
 
-#reportDebrisButton button:hover, #viewMapButton button:hover {
+#reportDebrisButton button:hover, #viewMapButton button:hover, #reportedDebrisButton button:hover, #upcomingEventsButton button:hover {
   background-color: transparent;
 }
 
@@ -137,6 +156,12 @@ body  {
 
 #viewMap {
   background-color: #009C41;
+  padding: 10px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+}
+
+#upcomingEvents {
+  background-color: #17BBB0;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -233,6 +258,7 @@ label {
 
 .radioContainer:hover{
   transform: scale(1.08);
+  background-color: rgba(23, 187, 176, 0.2);
 }
 
 .radioContainer:hover i {
@@ -262,7 +288,7 @@ label {
 }
 
  input:checked ~ .checkmark {
-   background-color: rgba(23, 187, 176, 0.3);
+   background-color: rgba(23, 187, 176, 0.2);
 }
 
 .checkmark:after {
