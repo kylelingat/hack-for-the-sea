@@ -53,7 +53,8 @@ button a {
   font-size: 18px;
   color: white;
   display: block;
-  font-family: 'Roboto';
+  font-family: 'Lato';
+  font-weight: bold;
 }
 
 #mainContent {
