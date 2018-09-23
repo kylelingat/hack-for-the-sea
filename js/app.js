@@ -73,6 +73,7 @@ function initMap() {
     let otherPage = document.getElementById('otherPage');
     let container = document.getElementById('mainContent');
     container.style.display = 'none';
+    $("")
     console.log(container)
     otherPage.style.display = 'block';
 }
