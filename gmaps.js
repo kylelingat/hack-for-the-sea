@@ -2408,11 +2408,14 @@ if (!Array.prototype.indexOf) {
 return GMaps;
 }));
 
+var sanFrancisco = new google.maps.LatLng(37.774546, -122.433523);
+
 var map = new GMaps({
   el: '#map',
         lat: 21.3882887,
         lng: -157.9885406,
-        zoom: 10,
+        // center: sanFrancisco,
+        zoom: 5,
         mapType: 'hybrid',
         disableDefaultUI: true
 });
@@ -2429,10 +2432,11 @@ map.addControl({
   },
   events: {
     click: function(){
+      document.getElementById("currents").style.display = "none";
       GMaps.geolocate({
         success: function(position) {
           map.setCenter(position.coords.latitude, position.coords.longitude);
-          map.setZoom(16)
+          map.setZoom(18)
         },
         error: function(error) {
           alert('Geolocation failed: '+error.message);
@@ -2447,3 +2451,25 @@ map.addControl({
     }
   }
 });
+
+var heatmapData = [
+  new google.maps.LatLng(37.782, -122.447),
+  new google.maps.LatLng(37.782, -122.445),
+  new google.maps.LatLng(37.782, -122.443),
+  new google.maps.LatLng(37.782, -122.441),
+  new google.maps.LatLng(37.782, -122.439),
+  new google.maps.LatLng(37.782, -122.437),
+  new google.maps.LatLng(37.782, -122.435),
+  new google.maps.LatLng(37.785, -122.447),
+  new google.maps.LatLng(37.785, -122.445),
+  new google.maps.LatLng(37.785, -122.443),
+  new google.maps.LatLng(37.785, -122.441),
+  new google.maps.LatLng(37.785, -122.439),
+  new google.maps.LatLng(37.785, -122.437),
+  new google.maps.LatLng(37.785, -122.435)
+];
+
+var heatmap = new google.maps.visualization.HeatmapLayer({
+  data: heatmapData
+});
+heatmap.setMap(map);
