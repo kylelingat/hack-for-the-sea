@@ -1,4 +1,4 @@
-body  {
+body {
   width: 100vw;
   height: 100vh;
   margin: 0;
@@ -7,15 +7,25 @@ body  {
   font-family: 'Roboto';
 }
 
+#re-toggle {
+  display: none;
+}
+
 #pageContainer {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   display: grid;
   grid-template-columns: 20% 80%;
 }
 
+#main-container {
+  height: 100%;
+  width: 100%;
+}
+
 #leftNav {
   height: 100%;
-  background-color: #1C2A39;
+  background-color: #1c2a39;
   padding-bottom: 50px;
 }
 
@@ -28,14 +38,15 @@ body  {
 }
 
 #leftNav li:hover {
-  background-color: #17BBB0;
+  background-color: #17bbb0;
 }
 
 .active {
-  background-color: #17BBB0;
+  background-color: #17bbb0;
 }
 
-#leftNav a, button a {
+#leftNav a,
+button a {
   padding: 15px;
   text-decoration: none;
   font-size: 18px;
@@ -45,7 +56,7 @@ body  {
 }
 
 #mainContent {
-  background-color: #E0E0E0;
+  background-color: #e0e0e0;
   height: 100%;
   width: 100%;
   padding-bottom: 50px;
@@ -64,7 +75,7 @@ body  {
   margin: auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 0.10fr 0.10fr;
+  grid-template-rows: 0.1fr 0.1fr;
   grid-gap: 40px;
 }
 
@@ -83,20 +94,22 @@ body  {
 
 #reportDebris {
   grid-column-start: 1;
-  background-color: #007B70;
+  background-color: #007b70;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 #reportedDebris {
-    grid-column-start: 1;
-    background-color: #2ECC71;
-    padding: 10px;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  grid-column-start: 1;
+  background-color: #2ecc71;
+  padding: 10px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-
-#reportDebris h1, #viewMap h1, #reportedDebris h1, #upcomingEvents h1 {
+#reportDebris h1,
+#viewMap h1,
+#reportedDebris h1,
+#upcomingEvents h1 {
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: lighter;
@@ -105,11 +118,17 @@ body  {
   margin-top: 25px;
 }
 
-#reportDebrisButton, #viewMapButton, #reportedDebrisButton, #upcomingEventsButton {
+#reportDebrisButton,
+#viewMapButton,
+#reportedDebrisButton,
+#upcomingEventsButton {
   text-align: center;
 }
 
-#reportDebrisButton button, #viewMapButton button, #reportedDebrisButton button, #upcomingEventsButton button {
+#reportDebrisButton button,
+#viewMapButton button,
+#reportedDebrisButton button,
+#upcomingEventsButton button {
   border: none;
   color: white;
   padding: 20px;
@@ -124,26 +143,29 @@ body  {
 }
 
 #reportDebrisButton button {
-  background-color: #17BBB0;
-  border: 3px solid #17BBB0;
+  background-color: #17bbb0;
+  border: 3px solid #17bbb0;
 }
 
 #viewMapButton button {
-  background-color: #1EBC61;
-  border: 3px solid #1EBC61;
+  background-color: #1ebc61;
+  border: 3px solid #1ebc61;
 }
 
 #upcomingEventsButton button {
-  background-color: #37DBD0;
-  border: 3px solid #37DBD0;
+  background-color: #37dbd0;
+  border: 3px solid #37dbd0;
 }
 
 #reportedDebrisButton button {
-  background-color: #4EEC91;
-  border: 3px solid #4EEC91;
+  background-color: #4eec91;
+  border: 3px solid #4eec91;
 }
 
-#reportDebrisButton button:hover, #viewMapButton button:hover, #reportedDebrisButton button:hover, #upcomingEventsButton button:hover {
+#reportDebrisButton button:hover,
+#viewMapButton button:hover,
+#reportedDebrisButton button:hover,
+#upcomingEventsButton button:hover {
   background-color: transparent;
 }
 
@@ -156,13 +178,13 @@ body  {
 }
 
 #viewMap {
-  background-color: #009C41;
+  background-color: #009c41;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
 #upcomingEvents {
-  background-color: #17BBB0;
+  background-color: #17bbb0;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -180,19 +202,21 @@ body  {
 .inputItem {
 }
 
-input[type="text"], input[type="email"], input[type="tel"] {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    box-sizing: border-box;
-    margin-bottom: 40px;
-    font-size: 21px;
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-sizing: border-box;
+  margin-bottom: 40px;
+  font-size: 21px;
 }
 
-#descriptionInputContainer{
+#descriptionInputContainer {
   grid-column-end: span 3;
 }
 
@@ -240,24 +264,24 @@ label {
   grid-column-start: 2;
 }
 .radioContainer {
-    display: block;
-    color: black;
-    position: relative;
-    margin-bottom: 25px;
-    cursor: pointer;
-    font-size: 20px;
-    background-color: white;
-    border-radius: 10px;
-    padding: 25px;
-    transition: 0.3s;
-    width: 70%;
-    height: 100px;
-    text-align: center;
-    margin: auto;
-    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  display: block;
+  color: black;
+  position: relative;
+  margin-bottom: 25px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 25px;
+  transition: 0.3s;
+  width: 70%;
+  height: 100px;
+  text-align: center;
+  margin: auto;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
 
-.radioContainer:hover{
+.radioContainer:hover {
   transform: scale(1.08);
   background-color: rgba(23, 187, 176, 0.2);
 }
@@ -270,33 +294,33 @@ label {
 }
 /* Hide the browser's default radio button */
 .radioContainer input {
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
 }
 
 /* Create a custom radio button */
 .checkmark {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0);
-    color: transparent;
-    border-radius: 10px;
-    transition: 0.3s;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+  color: transparent;
+  border-radius: 10px;
+  transition: 0.3s;
 }
 
- input:checked ~ .checkmark {
-   background-color: rgba(23, 187, 176, 0.2);
+input:checked ~ .checkmark {
+  background-color: rgba(23, 187, 176, 0.2);
 }
 
 .checkmark:after {
-    content: "";
-    padding: 10px;
-    position: absolute;
-    display: none;
+  content: '';
+  padding: 10px;
+  position: absolute;
+  display: none;
 }
 
 .checkmark p {
@@ -304,10 +328,10 @@ label {
   font-size: 20px;
 }
 
-input[type="submit"] {
-  border: 3px solid #17BBB0;
+.submit-button {
+  border: 3px solid #17bbb0;
   color: white;
-  background-color: #17BBB0;
+  background-color: #17bbb0;
   padding: 20px;
   text-align: center;
   text-decoration: none;
@@ -321,15 +345,14 @@ input[type="submit"] {
   border-radius: 10px;
 }
 
-input[type="submit"]:hover {
+.submit-button:hover {
   background-color: transparent;
-  color: #17BBB0;
+  color: #17bbb0;
 }
 
-
-
-@media only screen and (max-width : 1024px){
-  #mainContentContainer, #form {
+@media only screen and (max-width: 1024px) {
+  #mainContentContainer,
+  #form {
     grid-template-columns: 1fr;
   }
 
@@ -351,7 +374,7 @@ input[type="submit"]:hover {
     grid-column-start: 1 !important;
   }
 
-  input[type="submit"] {
+  .submit-button {
     grid-column-start: 1 !important;
   }
 }
