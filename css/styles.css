@@ -4,6 +4,7 @@ body  {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  font-family: 'Roboto';
 }
 
 #pageContainer {
@@ -150,7 +151,7 @@ body  {
 .inputItem {
 }
 
-input {
+input[type="text"], input[type="email"], input[type="tel"] {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -163,7 +164,6 @@ input {
 }
 
 label {
-  font-family: 'Roboto';
   opacity: 0.7;
 }
 
@@ -180,4 +180,111 @@ label {
 
 #locationInputContainer {
   grid-column-end: span 2;
+}
+
+#typeInputContainer {
+  grid-column-end: span 3;
+}
+
+#typesContainerGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  margin-top: 25px;
+}
+
+#typeInputContainer h1 {
+  opacity: 0.7;
+  font-size: 18px;
+}
+
+#typeInputContainer i {
+  font-size: 70px;
+}
+
+#other {
+  grid-column-start: 2;
+}
+.radioContainer {
+    display: block;
+    color: black;
+    position: relative;
+    margin-bottom: 25px;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 25px;
+    transition: 0.3s;
+    width: 70%;
+    height: 100px;
+    text-align: center;
+    margin: auto;
+}
+
+.radioContainer:hover{
+  transform: scale(1.08);
+}
+
+.radioContainer:hover i {
+}
+
+.radioContainer p {
+  margin-left: 25px;
+}
+/* Hide the browser's default radio button */
+.radioContainer input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom radio button */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    color: transparent;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+ input:checked ~ .checkmark {
+   background-color: rgba(23, 187, 176, 0.3);
+}
+
+.checkmark:after {
+    content: "";
+    padding: 10px;
+    position: absolute;
+    display: none;
+}
+
+.checkmark p {
+  color: white;
+  font-size: 20px;
+}
+
+input[type="submit"] {
+  border: 3px solid #17BBB0;
+  color: white;
+  background-color: #17BBB0;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  transition: 0.3s;
+  grid-column-start: 2;
+}
+
+input[type="submit"]:hover {
+  background-color: transparent;
+  color: #17BBB0;
 }

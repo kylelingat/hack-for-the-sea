@@ -20,34 +20,79 @@
         </div>
 
         <div id="mainContent">
-          <div id="pageName">
-            <h1>Report Debris</h1>
-          </div>
+            <div id="pageName">
+                <h1>Report Debris</h1>
+            </div>
             <div id="formArea">
                 <form id="form">
-                  <div id="nameInputContainer" class="inputItem">
-                    <label id="nameLabel" for="nameInput">Name:</label>
-                    <input id="nameInput" type="text"></input>
-                  </div>
-                  <div id="emailInputContainer"class="inputItem">
-                    <label for="nameInput">E-Mail</label>
-                    <input type="email"></input>
-                  </div>
-                  <div id="phoneInputContainer" class="inputItem">
-                    <label for="nameInput">Phone Number</label>
-                    <input type="tel"></input>
-                  </div>
-                  <div id="locationInputContainer" class="inputItem">
-                    <label for="nameInput">Location</label>
-                    <input type="text"></input>
-                  </div>
-                  <div id="typeInputContainer" class="inputItem">
-                    <input type="radio" name="gender" value="male" checked> Male
-                    <input type="radio" name="gender" value="female"> Female
-                    <input type="radio" name="gender" value="other"> Other
-                  </div>
+                    <div id="nameInputContainer" class="inputItem">
+                        <label id="nameLabel" for="nameInput">Name:</label>
+                        <input id="nameInput" type="text">
+                    </div>
+                    <div id="emailInputContainer" class="inputItem">
+                        <label for="nameInput">E-Mail</label>
+                        <input type="email">
+                    </div>
+                    <div id="phoneInputContainer" class="inputItem">
+                        <label for="nameInput">Phone Number</label>
+                        <input type="tel">
+                    </div>
+                    <div id="locationInputContainer" class="inputItem">
+                        <label for="nameInput">Location</label>
+                        <input type="text">
+                    </div>
+                    <div id="typeInputContainer" class="inputItem">
+                        <h1>Type of Debris</h1>
+                    <div id="typesContainerGrid">
+                        <label id="plastic" class="radioContainer">
+                                    <i class="fas fa-recycle"></i>
+                                    <h1>Plastic</h1>
+                                    <input type="radio" name="radio" value="plastic">
+                                    <span class="checkmark"></span>
+                                  </label>
+                        <label id="glass" class="radioContainer">
+                                    <i class="fas fa-wine-glass"></i>
+                                    <h1>Glass</h1>
+                                    <input type="radio" name="radio" value="glass">
+                                    <span class="checkmark"></span>
+                                  </label>
+                        <label id="metal" class="radioContainer">
+                                    <i class="fas fa-cog"></i>
+                                    <h1>Metal</h1>
+                                    <input type="radio" name="radio" value="metal">
+                                    <span class="checkmark"></span>
+                                  </label>
 
-                    <input type="submit"></input>
+                        <label id="paper" class="radioContainer">
+                                    <i class="fas fa-newspaper"></i>
+                                    <h1>Paper</h1>
+                                    <input type="radio" name="radio" value="paper">
+                                    <span class="checkmark"></span>
+                                  </label>
+                        <label id="clothes" class="radioContainer">
+                                    <i class="fas fa-tshirt"></i>
+                                    <h1>Clothes</h1>
+                                    <input type="radio" name="radio" value="paper">
+                                    <span class="checkmark"></span>
+                                  </label>
+                        <label id="rubber" class="radioContainer">
+                                    <i class="fas fa-eraser"></i>
+                                    <h1>Rubber</h1>
+                                    <input type="radio" name="radio" value="paper">
+                                    <span class="checkmark"></span>
+                                  </label>
+                        <label id="other" class="radioContainer">
+                                    <i class="fas fa-question"></i>
+                                    <h1>Other</h1>
+                                    <input type="radio" name="radio" value="paper">
+                                    <span class="checkmark"></span>
+                                  </label>
+                    <input type="submit">
+                                </div>
+
+                    </div>
+
+
 
 
                 </form>
