@@ -1,5 +1,6 @@
 body {
   width: 100vw;
+  min-width: 300px;
   height: 100vh;
   margin: 0;
   padding: 0;
@@ -15,7 +16,7 @@ body {
   height: 100%;
   width: 100%;
   display: grid;
-  grid-template-columns: 20% 80%;
+  /* grid-template-columns: 20% 80%; */
 }
 
 #main-container {
@@ -484,6 +485,13 @@ input:checked ~ .checkmark {
   height: 400px;
   overflow-y: scroll;
   overflow-x: hidden;
+  border-radius: 5px;
+}
+
+@media (min-width:300px) and (max-width: 400px) {
+  .modal-content {
+    width: 70%;
+  }
 }
 
 .modal-content h1 {
@@ -645,6 +653,7 @@ input:checked ~ .checkmark {
   width: 90%;
   margin: auto;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
+  border-radius: 20px 20px 0px 0px;
 }
 
 .eventItem:nth-child(even) {
@@ -659,7 +668,6 @@ input:checked ~ .checkmark {
   background-size: cover;
   background-position: center;
   border-radius: 10px 10px 0px 0px;
-
 }
 
 .eventItem:nth-child(2) .eventBanner {
@@ -708,6 +716,7 @@ input:checked ~ .checkmark {
   text-align: center;
 }
 
+
 @media only screen and (max-width: 1024px) {
   #mainContentContainer,
   #form,
@@ -749,4 +758,64 @@ input:checked ~ .checkmark {
   .submit-button {
     grid-column-start: 1 !important;
   }
+
+  #modalName h2, #modalEmail h2 {
+    line-height: 50px;
+  }
 }
+
+@media (min-width: 300px) and (max-width: 600px) {
+  #openMenu {
+    width: 48px;
+    height: 60px;
+    position: absolute;
+    border-bottom-right-radius: 30px;
+    border-top-right-radius: 30px;
+    top: 5px;
+    z-index: 2;
+  }
+
+  #openMenu img {
+    width: 30px;
+    height: 35px;
+    position: relative;
+    filter: brightness(65%);
+    right: -7px;
+    top: 11px;
+  }
+
+  .activeMenu {
+    left: 80%;
+  }
+
+  .inactiveMenu {
+    left: 0%;
+  }
+
+  .activeGrid {
+    grid-template-columns: 80% 80%;
+    overflow-x: hidden;
+  }
+
+  .inactiveGrid {
+    grid-template-columns: 0% 100%;
+  }
+}
+
+@media (min-width: 601px) {
+  #pageContainer {
+    grid-template-columns: 20% 80%;
+  }
+
+  #openMenu {
+    display: none;
+  }
+}
+
+::-webkit-scrollbar-button{ display: none; height: 13px; border-radius: 0px; background-color: #AAA;}
+::-webkit-scrollbar-button:hover{ background-color: #AAA; }
+::-webkit-scrollbar-thumb{ background-color: #52778E; border-radius: 5px; }
+/* ::-webkit-scrollbar-thumb:hover{ background-color: #CCC; }  */
+::-webkit-scrollbar-track{ background-color: #efefef; border-radius: 5px;}
+::-webkit-scrollbar-track:hover{ background-color: #dedede;}
+::-webkit-scrollbar{ width: 10px; }
