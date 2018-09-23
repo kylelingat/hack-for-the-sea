@@ -768,13 +768,12 @@ input:checked ~ .checkmark {
     width: 48px;
     height: 60px;
     position: absolute;
-    background-color: #F58F31;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 30px;
     top: 5px;
     z-index: 2;
   }
-  
+
   #openMenu img {
     width: 30px;
     height: 35px;
@@ -783,20 +782,20 @@ input:checked ~ .checkmark {
     right: -7px;
     top: 11px;
   }
-  
+
   .activeMenu {
     left: 80%;
   }
-  
+
   .inactiveMenu {
     left: 0%;
   }
-  
+
   .activeGrid {
     grid-template-columns: 80% 80%;
     overflow-x: hidden;
   }
-  
+
   .inactiveGrid {
     grid-template-columns: 0% 100%;
   }
@@ -812,10 +811,10 @@ input:checked ~ .checkmark {
   }
 }
 
-::-webkit-scrollbar-button{ display: none; height: 13px; border-radius: 0px; background-color: #AAA;} 
-::-webkit-scrollbar-button:hover{ background-color: #AAA; } 
-::-webkit-scrollbar-thumb{ background-color: #52778E; border-radius: 5px; } 
+::-webkit-scrollbar-button{ display: none; height: 13px; border-radius: 0px; background-color: #AAA;}
+::-webkit-scrollbar-button:hover{ background-color: #AAA; }
+::-webkit-scrollbar-thumb{ background-color: #52778E; border-radius: 5px; }
 /* ::-webkit-scrollbar-thumb:hover{ background-color: #CCC; }  */
-::-webkit-scrollbar-track{ background-color: #efefef; border-radius: 5px;} 
-::-webkit-scrollbar-track:hover{ background-color: #dedede;} 
+::-webkit-scrollbar-track{ background-color: #efefef; border-radius: 5px;}
+::-webkit-scrollbar-track:hover{ background-color: #dedede;}
 ::-webkit-scrollbar{ width: 10px; }
