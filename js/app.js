@@ -1,3 +1,4 @@
+
 console.log("hello");
 var map, infowindow;
 
@@ -8,7 +9,7 @@ function initMap() {
             lng: -157.9885406
           },
           zoom: 10,
-          mapTypeId : "satellite",   
+          mapTypeId : "satellite",
         });
 
         infoWindow = new google.maps.InfoWindow;
