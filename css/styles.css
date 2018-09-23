@@ -134,7 +134,7 @@ button a {
 
 #reportedDebris {
   grid-column-start: 1;
-  background-color: #2ecc71;
+  background-color: #008C31;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
@@ -202,7 +202,7 @@ button a {
 }
 
 #viewMap {
-  background-color: #2ecc71;
+  background-color: #008C31;
   padding: 10px;
   box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.25);
 }
