@@ -1,61 +1,64 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <title>reports</title>
-    <link rel="stylesheet" href="/css/report.css">
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-        crossorigin="anonymous">
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  </head>
+  <body>
 
-<body>
-    <div id="reportPageContainer">
-        <div id="leftNav">
-            <li><a href="">HOME</a></li>
-            <li><a href="form.html">REPORT DEBRIS</a></li>
-            <li class="active"><a href="report.html">REPORTED DEBRIS</a></li>
-            <li><a href="map.html">VIEW MAP</a></li>
-            <li><a href="">UPOMING EVENTS</a></li>
+    <div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <p>Some text in the Modal..</p>
+  </div>
+
+</div>
+
+    <div id="pageContainer">
+    <div id="leftNav">
+      <li><a href="index.html">HOME</a></li>
+      <li><a href="form.html">Report Debris</a></li>
+      <li class="active"><a href="report.html">Reported Debris</a></li>
+      <li><a href="map.html">View Map</a></li>
+      <li><a href="">Upcoming Events</a></li>
+    </div>
+
+    <div id="mainContent">
+      <div id="pageName">
+        <h1>Reported Debris</h1>
+      </div>
+      <div id="submissionContent">
+        <div id="submissionGrid">
+          <div class="submissionItem">
+            <div class="submissionItemBackground"></div>
           </div>
-        <div id="reportContainer">
-            <h1>Reports</h1>
-            <div id="reports">
-                <div class="sampleReport">
-                    <div class="repImg">
-                        <img src="https://ecochiccayman.files.wordpress.com/2016/01/garbage-beach-1.jpg" alt="Image N/A">
-                    </div>
-                    <!-- <div class="imgOverlay"></div>
-                    <div class="commentOverlay"></div> -->
-                </div>
-                <div class="sampleReport">
-                    <div class="repImg">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfh_y-vyvWx1NRZXfSmNR6sZIkrVagXGWSpHpfEhf_JFPcTHBIxA"
-                            alt="Image N/A">
-                    </div>
-                </div>
-                <div class="sampleReport">
-                    <div class="repImg">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfh_y-vyvWx1NRZXfSmNR6sZIkrVagXGWSpHpfEhf_JFPcTHBIxA"
-                            alt="Image N/A">
-                    </div>
-                </div>
-                <div class="sampleReport">
-                    <div class="repImg">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfh_y-vyvWx1NRZXfSmNR6sZIkrVagXGWSpHpfEhf_JFPcTHBIxA"
-                            alt="Image N/A">
-                    </div>
-                </div>
-                <div class="sampleReport">
-                    <div class="repImg">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfh_y-vyvWx1NRZXfSmNR6sZIkrVagXGWSpHpfEhf_JFPcTHBIxA"
-                            alt="Image N/A">
-                    </div>
-                </div>
-            </div>
+          <div class="submissionItem">
+            <div class="submissionItemBackground"></div>
+          </div>
+          <div class="submissionItem">
+            <div class="submissionItemBackground"></div>
+          </div>
+          <div class="submissionItem">
+            <div class="submissionItemBackground"></div>
+          </div>
+          <div class="submissionItem">
+            <div class="submissionItemBackground"></div>
+          </div>
         </div>
     </div>
-</body>
-
+    </div>
+  </div>
+  </body>
+  <script type="text/javascript" src="js/app.js"></script>
+  <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAE_Cbo0OczNxVI1Ppoxl_U9ZlmzvAVEn8&callback=initMap">
+  </script>
+  <script type="text/javascript" src="./js/app.js"></script>
 </html>
