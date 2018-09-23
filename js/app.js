@@ -41,3 +41,6 @@ function initMap() {
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
     }
+
+  //onclick openMenu
+  //change grid class to activemenu/grid or inactivemenu/grid
